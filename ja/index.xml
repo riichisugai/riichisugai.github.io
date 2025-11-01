@@ -1,75 +1,60 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>菅井 理一 (Riichi Sugai) on Riichi Sugai</title>
-    <link>https://riichisugai.github.io/ja/</link>
-    <description>Recent content in 菅井 理一 (Riichi Sugai) on Riichi Sugai</description>
-    <generator>Hugo -- 0.152.2</generator>
-    <language>ja</language>
-    <lastBuildDate>Sat, 01 Nov 2025 02:17:13 +0900</lastBuildDate>
-    <atom:link href="https://riichisugai.github.io/ja/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>01: HUGO によるWEBサイト作成</title>
-      <link>https://riichisugai.github.io/ja/blog/01-first-post/</link>
-      <pubDate>Sat, 01 Nov 2025 02:17:13 +0900</pubDate>
-      <guid>https://riichisugai.github.io/ja/blog/01-first-post/</guid>
-      <description>&lt;p&gt;はじめての WEB サイト作成を、 &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;HUGO&lt;/a&gt;
- を利用して実施してみました。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>菅井 理一 (Riichi Sugai) on Riichi Sugai</title><link>https://riichisugai.github.io/ja/</link><description>Recent content in 菅井 理一 (Riichi Sugai) on Riichi Sugai</description><generator>Hugo -- 0.152.2</generator><language>ja</language><lastBuildDate>Sat, 01 Nov 2025 02:17:13 +0900</lastBuildDate><atom:link href="https://riichisugai.github.io/ja/index.xml" rel="self" type="application/rss+xml"/><item><title>01: HUGO によるWEBサイト作成</title><link>https://riichisugai.github.io/ja/blog/01-first-post/</link><pubDate>Sat, 01 Nov 2025 02:17:13 +0900</pubDate><guid>https://riichisugai.github.io/ja/blog/01-first-post/</guid><description>&lt;p&gt;はじめての WEB サイト作成を、 &lt;a href="https://gohugo.io/" target="_blank" rel="noopener"&gt;HUGO&lt;/a&gt;
+を利用して実施してみました。
 以下では、その手順を備忘録として残しておきます。&lt;/p&gt;
-&lt;h2 id=&#34;静的サイトジェネレーター&#34;&gt;静的サイトジェネレーター&lt;/h2&gt;
+&lt;h2 id="静的サイトジェネレーター"&gt;静的サイトジェネレーター&lt;/h2&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;特徴&lt;/th&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;plain HTML&lt;/th&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;Jekyll&lt;/th&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;Hugo&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;言語基盤&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;HTML/CSS/JS&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;Ruby&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;Go&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;セットアップ&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;なし&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;中程度&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;やや難&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;GitHub Pages対応&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;◎（直接OK）&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;◎（公式サポート）&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;○（ビルド後にpush）&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;ビルド速度&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;–&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;遅め&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;超高速&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;多言語対応&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;手動&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;一部可能&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;◎（標準機能）&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;テンプレート/テーマ&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;手動&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;多い&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;非常に多い&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;向き&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;小規模・自由設計&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;中規模・ブログ型&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;中〜大規模・多言語型&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: left"&gt;特徴&lt;/th&gt;
+&lt;th style="text-align: center"&gt;plain HTML&lt;/th&gt;
+&lt;th style="text-align: center"&gt;Jekyll&lt;/th&gt;
+&lt;th style="text-align: center"&gt;Hugo&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;言語基盤&lt;/td&gt;
+&lt;td style="text-align: center"&gt;HTML/CSS/JS&lt;/td&gt;
+&lt;td style="text-align: center"&gt;Ruby&lt;/td&gt;
+&lt;td style="text-align: center"&gt;Go&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;セットアップ&lt;/td&gt;
+&lt;td style="text-align: center"&gt;なし&lt;/td&gt;
+&lt;td style="text-align: center"&gt;中程度&lt;/td&gt;
+&lt;td style="text-align: center"&gt;やや難&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;GitHub Pages対応&lt;/td&gt;
+&lt;td style="text-align: center"&gt;◎（直接OK）&lt;/td&gt;
+&lt;td style="text-align: center"&gt;◎（公式サポート）&lt;/td&gt;
+&lt;td style="text-align: center"&gt;○（ビルド後にpush）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;ビルド速度&lt;/td&gt;
+&lt;td style="text-align: center"&gt;–&lt;/td&gt;
+&lt;td style="text-align: center"&gt;遅め&lt;/td&gt;
+&lt;td style="text-align: center"&gt;超高速&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;多言語対応&lt;/td&gt;
+&lt;td style="text-align: center"&gt;手動&lt;/td&gt;
+&lt;td style="text-align: center"&gt;一部可能&lt;/td&gt;
+&lt;td style="text-align: center"&gt;◎（標準機能）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;テンプレート/テーマ&lt;/td&gt;
+&lt;td style="text-align: center"&gt;手動&lt;/td&gt;
+&lt;td style="text-align: center"&gt;多い&lt;/td&gt;
+&lt;td style="text-align: center"&gt;非常に多い&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;向き&lt;/td&gt;
+&lt;td style="text-align: center"&gt;小規模・自由設計&lt;/td&gt;
+&lt;td style="text-align: center"&gt;中規模・ブログ型&lt;/td&gt;
+&lt;td style="text-align: center"&gt;中〜大規模・多言語型&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;今回は Hugo (ヒューゴ) を利用することにした。
 選択のポイントは以下の通り。&lt;/p&gt;
@@ -77,42 +62,39 @@
 &lt;li&gt;ブログや研究記録のようにページが増えるサイトの場合には、Jekyll、Hugo が向いている&lt;/li&gt;
 &lt;li&gt;日本語と英語の両方に対応させたい → Hugo が向いている&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;環境構築&#34;&gt;環境構築&lt;/h2&gt;
-&lt;h3 id=&#34;hugo-のインストール&#34;&gt;Hugo のインストール&lt;/h3&gt;
+&lt;h2 id="環境構築"&gt;環境構築&lt;/h2&gt;
+&lt;h3 id="hugo-のインストール"&gt;Hugo のインストール&lt;/h3&gt;
 &lt;p&gt;macOS の場合&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install hugo
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;brew install hugo
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;hugo version&lt;/code&gt; でバージョンが確認できればOK。&lt;/p&gt;
-&lt;h3 id=&#34;新規サイトの作成&#34;&gt;新規サイトの作成&lt;/h3&gt;
+&lt;h3 id="新規サイトの作成"&gt;新規サイトの作成&lt;/h3&gt;
 &lt;p&gt;作成したい場所で、以下のコマンドを入力（ &lt;code&gt;my-website&lt;/code&gt; には任意の名前をいれる）&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new site my-website
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd my-website
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;web-サイトのテーマを選定&#34;&gt;Web サイトのテーマを選定&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hugo new site my-website
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd my-website
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="web-サイトのテーマを選定"&gt;Web サイトのテーマを選定&lt;/h3&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;テーマ名&lt;/th&gt;
-          &lt;th&gt;特徴&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;a href=&#34;https://themes.gohugo.io/themes/hugo-coder/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;hugo-coder&lt;/strong&gt;&lt;/a&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;テーマ名&lt;/th&gt;
+&lt;th&gt;特徴&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://themes.gohugo.io/themes/hugo-coder/" target="_blank" rel="noopener"&gt;&lt;strong&gt;hugo-coder&lt;/strong&gt;&lt;/a&gt;
 &lt;/td&gt;
-          &lt;td&gt;シンプル＆軽量。プロフィールサイトに最適。&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;a href=&#34;https://themes.gohugo.io/themes/hugo-papermod/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;PaperMod&lt;/strong&gt;&lt;/a&gt;
+&lt;td&gt;シンプル＆軽量。プロフィールサイトに最適。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://themes.gohugo.io/themes/hugo-papermod/" target="_blank" rel="noopener"&gt;&lt;strong&gt;PaperMod&lt;/strong&gt;&lt;/a&gt;
 &lt;/td&gt;
-          &lt;td&gt;見やすい＆ブログ形式。学術用途にも人気。&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Academic (Wowchemy)&lt;/strong&gt;&lt;/a&gt;
+&lt;td&gt;見やすい＆ブログ形式。学術用途にも人気。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://wowchemy.com/" target="_blank" rel="noopener"&gt;&lt;strong&gt;Academic (Wowchemy)&lt;/strong&gt;&lt;/a&gt;
 &lt;/td&gt;
-          &lt;td&gt;研究者向け最強。論文リストやプロジェクト紹介に対応。やや重め。&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;td&gt;研究者向け最強。論文リストやプロジェクト紹介に対応。やや重め。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;ということで、 &lt;strong&gt;PaperMod&lt;/strong&gt; を選択。 上で作成した web サイト用のディレクトリに移動したあと、以下のコマンドによりテーマをクローンした。&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+&lt;p&gt;ということで、 &lt;strong&gt;PaperMod&lt;/strong&gt; を選択。 上で作成した web サイト用のディレクトリに移動したあと、以下のコマンドによりテーマをクローンした。&lt;/p&gt;</description></item></channel></rss>

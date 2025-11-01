@@ -1,6 +1,53 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Blog on Riichi Sugai</title><link>https://riichisugai.github.io/ja/blog/</link><description>Recent content in Blog on Riichi Sugai</description><generator>Hugo -- 0.152.2</generator><language>ja</language><lastBuildDate>Sat, 01 Nov 2025 02:17:13 +0900</lastBuildDate><atom:link href="https://riichisugai.github.io/ja/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>01: HUGO によるWEBサイト作成</title><link>https://riichisugai.github.io/ja/blog/01-first-post/</link><pubDate>Sat, 01 Nov 2025 02:17:13 +0900</pubDate><guid>https://riichisugai.github.io/ja/blog/01-first-post/</guid><description>&lt;p&gt;はじめての WEB サイト作成を、 &lt;a href="https://gohugo.io/" target="_blank" rel="noopener"&gt;HUGO&lt;/a&gt;
-を利用して実施してみました。
-以下では、その手順を備忘録として残しておきます。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Blog on Riichi Sugai</title><link>https://riichisugai.github.io/ja/blog/</link><description>Recent content in Blog on Riichi Sugai</description><generator>Hugo -- 0.152.2</generator><language>ja</language><lastBuildDate>Sat, 01 Nov 2025 02:17:13 +0900</lastBuildDate><atom:link href="https://riichisugai.github.io/ja/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>01: Hugo による Web サイト作成</title><link>https://riichisugai.github.io/ja/blog/01-first-post/</link><pubDate>Sat, 01 Nov 2025 02:17:13 +0900</pubDate><guid>https://riichisugai.github.io/ja/blog/01-first-post/</guid><description>&lt;p&gt;はじめての Web サイト作成を、 &lt;a href="https://gohugo.io/" target="_blank" rel="noopener"&gt;Hugo&lt;/a&gt;
+を利用して行いました。
+以下では、その手順を残しておきます。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="目次"&gt;目次&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#%e7%9b%ae%e6%ac%a1"&gt;目次&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#%e9%9d%99%e7%9a%84%e3%82%b5%e3%82%a4%e3%83%88%e3%82%b8%e3%82%a7%e3%83%8d%e3%83%ac%e3%83%bc%e3%82%bf%e3%83%bc"&gt;静的サイトジェネレーター&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#%e7%92%b0%e5%a2%83%e6%a7%8b%e7%af%89"&gt;環境構築&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#hugo-%e3%81%ae%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab"&gt;Hugo のインストール&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#%e6%96%b0%e8%a6%8f%e3%82%b5%e3%82%a4%e3%83%88%e3%81%ae%e4%bd%9c%e6%88%90"&gt;新規サイトの作成&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#web-%e3%82%b5%e3%82%a4%e3%83%88%e3%81%ae%e3%83%86%e3%83%bc%e3%83%9e%e3%82%92%e9%81%b8%e5%ae%9a"&gt;Web サイトのテーマを選定&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#hugo-%e3%81%a7%e3%81%ae-web-%e3%83%9a%e3%83%bc%e3%82%b8%e4%bd%9c%e6%88%90%e6%96%b9%e6%b3%95"&gt;Hugo での Web ページ作成方法&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e6%a7%8b%e9%80%a0"&gt;ファイル構造&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#archetypesdefaultmd-%e3%81%ae%e8%a8%ad%e5%ae%9a"&gt;&lt;code&gt;archetypes/default.md&lt;/code&gt; の設定&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#hugotoml-%e3%81%ae%e8%a8%ad%e5%ae%9a"&gt;&lt;code&gt;hugo.toml&lt;/code&gt; の設定&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#%e3%83%88%e3%83%83%e3%83%97%e3%83%9a%e3%83%bc%e3%82%b8%e3%81%ae%e4%bd%9c%e6%88%90"&gt;トップページの作成&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#%e3%82%b3%e3%83%b3%e3%83%86%e3%83%b3%e3%83%84%e3%81%ae%e4%bd%9c%e6%88%90"&gt;コンテンツの作成&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#%e3%82%b5%e3%83%bc%e3%83%90%e3%83%bc%e3%81%ae%e8%b5%b7%e5%8b%95"&gt;サーバーの起動&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#githubio-%e3%81%a7%e3%81%ae%e5%85%ac%e9%96%8b"&gt;Github.io での公開&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#github-actions-%e3%81%a7%e3%81%ae%e8%87%aa%e5%8b%95%e4%bd%9c%e6%88%90"&gt;Github Actions での自動作成&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#%e7%9b%ae%e6%a8%99"&gt;目標&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#%e6%ba%96%e5%82%99%e3%81%99%e3%82%8b%e3%82%82%e3%81%ae"&gt;準備するもの&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#%e5%b0%8e%e5%85%a5%e6%89%8b%e9%a0%86"&gt;導入手順&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
 &lt;h2 id="静的サイトジェネレーター"&gt;静的サイトジェネレーター&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -56,45 +103,5 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;今回は Hugo (ヒューゴ) を利用することにした。
-選択のポイントは以下の通り。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;ブログや研究記録のようにページが増えるサイトの場合には、Jekyll、Hugo が向いている&lt;/li&gt;
-&lt;li&gt;日本語と英語の両方に対応させたい → Hugo が向いている&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="環境構築"&gt;環境構築&lt;/h2&gt;
-&lt;h3 id="hugo-のインストール"&gt;Hugo のインストール&lt;/h3&gt;
-&lt;p&gt;macOS の場合&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;brew install hugo
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;hugo version&lt;/code&gt; でバージョンが確認できればOK。&lt;/p&gt;
-&lt;h3 id="新規サイトの作成"&gt;新規サイトの作成&lt;/h3&gt;
-&lt;p&gt;作成したい場所で、以下のコマンドを入力（ &lt;code&gt;my-website&lt;/code&gt; には任意の名前をいれる）&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hugo new site my-website
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd my-website
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="web-サイトのテーマを選定"&gt;Web サイトのテーマを選定&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;テーマ名&lt;/th&gt;
-&lt;th&gt;特徴&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="https://themes.gohugo.io/themes/hugo-coder/" target="_blank" rel="noopener"&gt;&lt;strong&gt;hugo-coder&lt;/strong&gt;&lt;/a&gt;
-&lt;/td&gt;
-&lt;td&gt;シンプル＆軽量。プロフィールサイトに最適。&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="https://themes.gohugo.io/themes/hugo-papermod/" target="_blank" rel="noopener"&gt;&lt;strong&gt;PaperMod&lt;/strong&gt;&lt;/a&gt;
-&lt;/td&gt;
-&lt;td&gt;見やすい＆ブログ形式。学術用途にも人気。&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;a href="https://wowchemy.com/" target="_blank" rel="noopener"&gt;&lt;strong&gt;Academic (Wowchemy)&lt;/strong&gt;&lt;/a&gt;
-&lt;/td&gt;
-&lt;td&gt;研究者向け最強。論文リストやプロジェクト紹介に対応。やや重め。&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;ということで、 &lt;strong&gt;PaperMod&lt;/strong&gt; を選択。 上で作成した web サイト用のディレクトリに移動したあと、以下のコマンドによりテーマをクローンした。&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;今回は Hugo (ヒューゴ) を利用することにしました。
+選択のポイントは以下の通り。&lt;/p&gt;</description></item></channel></rss>

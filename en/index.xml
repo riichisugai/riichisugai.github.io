@@ -6,7 +6,73 @@
     <description>Recent content on Riichi Sugai</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Sat, 01 Nov 2025 02:17:13 +0900</lastBuildDate>
     <atom:link href="https://riichisugai.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>01: Creating a Website with HUGO</title>
+      <link>https://riichisugai.github.io/en/blog/01-first-post/</link>
+      <pubDate>Sat, 01 Nov 2025 02:17:13 +0900</pubDate>
+      <guid>https://riichisugai.github.io/en/blog/01-first-post/</guid>
+      <description>&lt;p&gt;I tried creating my first website using &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;HUGO&lt;/a&gt;
+.
+Here, I&amp;rsquo;ll leave a record of the steps as a memorandum.&lt;/p&gt;
+&lt;h2 id=&#34;static-site-generators&#34;&gt;Static Site Generators&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Feature&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Plain HTML&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Jekyll&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Hugo&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Language Base&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;HTML/CSS/JS&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Ruby&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Go&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Setup&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;None&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Medium&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Somewhat Hard&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;GitHub Pages&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;◎ (Direct)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;◎ (Official)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;○ (Push after build)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Build Speed&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;–&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Slow&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Ultra-fast&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Multilingual&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Manual&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Partially&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;◎ (Standard)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Templates/Themes&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Manual&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Many&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Very Many&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Best For&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Small/Free&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Medium/Blog&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Medium-Large/Multi-lang&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;This time, I decided to use Hugo.
+The key points for this choice were:&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

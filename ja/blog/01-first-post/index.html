@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ja" dir="auto" data-theme="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>01: HUGO によるWEBサイト作成 | Riichi Sugai</title>
 <meta name="keywords" content="">
 <meta name="description" content="はじめての WEB サイト作成を、 HUGO
@@ -108,17 +108,17 @@ Web サイトのテーマを選定
 
 ということで、 PaperMod を選択。 上で作成した web サイト用のディレクトリに移動したあと、以下のコマンドによりテーマをクローンした。">
 <meta name="author" content="Riichi Sugai">
-<link rel="canonical" href="http://localhost:1313/ja/blog/01-first-post/">
+<link rel="canonical" href="https://riichisugai.github.io/ja/blog/01-first-post/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://riichisugai.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://riichisugai.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://riichisugai.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://riichisugai.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://riichisugai.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/en/blog/01-first-post/">
-<link rel="alternate" hreflang="ja" href="http://localhost:1313/ja/blog/01-first-post/">
+<link rel="alternate" hreflang="en" href="https://riichisugai.github.io/en/blog/01-first-post/">
+<link rel="alternate" hreflang="ja" href="https://riichisugai.github.io/ja/blog/01-first-post/">
 <noscript>
     <style>
         #theme-toggle,
@@ -170,13 +170,177 @@ Web サイトのテーマを選定
         document.querySelector("html").dataset.theme = 'light';
     }
 
+</script><meta property="og:url" content="https://riichisugai.github.io/ja/blog/01-first-post/">
+  <meta property="og:site_name" content="Riichi Sugai">
+  <meta property="og:title" content="01: HUGO によるWEBサイト作成">
+  <meta property="og:description" content="はじめての WEB サイト作成を、 HUGO を利用して実施してみました。 以下では、その手順を備忘録として残しておきます。
+静的サイトジェネレーター 特徴 plain HTML Jekyll Hugo 言語基盤 HTML/CSS/JS Ruby Go セットアップ なし 中程度 やや難 GitHub Pages対応 ◎（直接OK） ◎（公式サポート） ○（ビルド後にpush） ビルド速度 – 遅め 超高速 多言語対応 手動 一部可能 ◎（標準機能） テンプレート/テーマ 手動 多い 非常に多い 向き 小規模・自由設計 中規模・ブログ型 中〜大規模・多言語型 今回は Hugo (ヒューゴ) を利用することにした。 選択のポイントは以下の通り。
+ブログや研究記録のようにページが増えるサイトの場合には、Jekyll、Hugo が向いている 日本語と英語の両方に対応させたい → Hugo が向いている 環境構築 Hugo のインストール macOS の場合
+brew install hugo hugo version でバージョンが確認できればOK。
+新規サイトの作成 作成したい場所で、以下のコマンドを入力（ my-website には任意の名前をいれる）
+hugo new site my-website cd my-website Web サイトのテーマを選定 テーマ名 特徴 hugo-coder シンプル＆軽量。プロフィールサイトに最適。 PaperMod 見やすい＆ブログ形式。学術用途にも人気。 Academic (Wowchemy) 研究者向け最強。論文リストやプロジェクト紹介に対応。やや重め。 ということで、 PaperMod を選択。 上で作成した web サイト用のディレクトリに移動したあと、以下のコマンドによりテーマをクローンした。">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2025-11-01T02:17:13+09:00">
+    <meta property="article:modified_time" content="2025-11-01T02:17:13+09:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="01: HUGO によるWEBサイト作成">
+<meta name="twitter:description" content="はじめての WEB サイト作成を、 HUGO
+ を利用して実施してみました。
+以下では、その手順を備忘録として残しておきます。
+静的サイトジェネレーター
+
+  
+      
+          特徴
+          plain HTML
+          Jekyll
+          Hugo
+      
+  
+  
+      
+          言語基盤
+          HTML/CSS/JS
+          Ruby
+          Go
+      
+      
+          セットアップ
+          なし
+          中程度
+          やや難
+      
+      
+          GitHub Pages対応
+          ◎（直接OK）
+          ◎（公式サポート）
+          ○（ビルド後にpush）
+      
+      
+          ビルド速度
+          –
+          遅め
+          超高速
+      
+      
+          多言語対応
+          手動
+          一部可能
+          ◎（標準機能）
+      
+      
+          テンプレート/テーマ
+          手動
+          多い
+          非常に多い
+      
+      
+          向き
+          小規模・自由設計
+          中規模・ブログ型
+          中〜大規模・多言語型
+      
+  
+
+今回は Hugo (ヒューゴ) を利用することにした。
+選択のポイントは以下の通り。
+
+ブログや研究記録のようにページが増えるサイトの場合には、Jekyll、Hugo が向いている
+日本語と英語の両方に対応させたい → Hugo が向いている
+
+環境構築
+Hugo のインストール
+macOS の場合
+brew install hugo
+hugo version でバージョンが確認できればOK。
+新規サイトの作成
+作成したい場所で、以下のコマンドを入力（ my-website には任意の名前をいれる）
+hugo new site my-website
+cd my-website
+Web サイトのテーマを選定
+
+  
+      
+          テーマ名
+          特徴
+      
+  
+  
+      
+          hugo-coder
+
+          シンプル＆軽量。プロフィールサイトに最適。
+      
+      
+          PaperMod
+
+          見やすい＆ブログ形式。学術用途にも人気。
+      
+      
+          Academic (Wowchemy)
+
+          研究者向け最強。論文リストやプロジェクト紹介に対応。やや重め。
+      
+  
+
+ということで、 PaperMod を選択。 上で作成した web サイト用のディレクトリに移動したあと、以下のコマンドによりテーマをクローンした。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "01: HUGO によるWEBサイト作成",
+      "item": "https://riichisugai.github.io/ja/blog/01-first-post/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "01: HUGO によるWEBサイト作成",
+  "name": "01: HUGO によるWEBサイト作成",
+  "description": "はじめての WEB サイト作成を、 HUGO を利用して実施してみました。 以下では、その手順を備忘録として残しておきます。\n静的サイトジェネレーター 特徴 plain HTML Jekyll Hugo 言語基盤 HTML/CSS/JS Ruby Go セットアップ なし 中程度 やや難 GitHub Pages対応 ◎（直接OK） ◎（公式サポート） ○（ビルド後にpush） ビルド速度 – 遅め 超高速 多言語対応 手動 一部可能 ◎（標準機能） テンプレート/テーマ 手動 多い 非常に多い 向き 小規模・自由設計 中規模・ブログ型 中〜大規模・多言語型 今回は Hugo (ヒューゴ) を利用することにした。 選択のポイントは以下の通り。\nブログや研究記録のようにページが増えるサイトの場合には、Jekyll、Hugo が向いている 日本語と英語の両方に対応させたい → Hugo が向いている 環境構築 Hugo のインストール macOS の場合\nbrew install hugo hugo version でバージョンが確認できればOK。\n新規サイトの作成 作成したい場所で、以下のコマンドを入力（ my-website には任意の名前をいれる）\nhugo new site my-website cd my-website Web サイトのテーマを選定 テーマ名 特徴 hugo-coder シンプル＆軽量。プロフィールサイトに最適。 PaperMod 見やすい＆ブログ形式。学術用途にも人気。 Academic (Wowchemy) 研究者向け最強。論文リストやプロジェクト紹介に対応。やや重め。 ということで、 PaperMod を選択。 上で作成した web サイト用のディレクトリに移動したあと、以下のコマンドによりテーマをクローンした。\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "はじめての WEB サイト作成を、 HUGO を利用して実施してみました。 以下では、その手順を備忘録として残しておきます。\n静的サイトジェネレーター 特徴 plain HTML Jekyll Hugo 言語基盤 HTML/CSS/JS Ruby Go セットアップ なし 中程度 やや難 GitHub Pages対応 ◎（直接OK） ◎（公式サポート） ○（ビルド後にpush） ビルド速度 – 遅め 超高速 多言語対応 手動 一部可能 ◎（標準機能） テンプレート/テーマ 手動 多い 非常に多い 向き 小規模・自由設計 中規模・ブログ型 中〜大規模・多言語型 今回は Hugo (ヒューゴ) を利用することにした。 選択のポイントは以下の通り。\nブログや研究記録のようにページが増えるサイトの場合には、Jekyll、Hugo が向いている 日本語と英語の両方に対応させたい → Hugo が向いている 環境構築 Hugo のインストール macOS の場合\nbrew install hugo hugo version でバージョンが確認できればOK。\n新規サイトの作成 作成したい場所で、以下のコマンドを入力（ my-website には任意の名前をいれる）\nhugo new site my-website cd my-website Web サイトのテーマを選定 テーマ名 特徴 hugo-coder シンプル＆軽量。プロフィールサイトに最適。 PaperMod 見やすい＆ブログ形式。学術用途にも人気。 Academic (Wowchemy) 研究者向け最強。論文リストやプロジェクト紹介に対応。やや重め。 ということで、 PaperMod を選択。 上で作成した web サイト用のディレクトリに移動したあと、以下のコマンドによりテーマをクローンした。\ngit init git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod 以上で環境構築は終了。\nHugo での Web ページ作成方法 Web ページのコンテンツ作成は、基本的にマークダウン形式のファイルを編集することで行う。作成したmdファイルをもとに、Hugo が静的サイトとして HTML を出力する。\nファイル構造 . ├── archetypes/ │ └── default.md # マークダウンファイルのテンプレを記入 ├── assets/ ├── content/ # サイトの内容を作成 │ ├── en/ # 英語用 │ │ │── _index.md # 各セクションのトップページの説明 │ │ └── blog/ │ │ │── _index.md # 各セクションのトップページの説明 │ │ └── 01-first-post.md # そのページのコンテンツ │ └── ja/ # 日本語用 │ ├── _index.md │ └── blog/ │ │── _index.md # 各セクションのトップページの説明 │ └── 01-first-post.md # そのページのコンテンツ ├── data/ ├── hugo.toml # サイトの設定を記入 ├── i18n/ ├── layouts/ ├── public/ ├── static/ └── themes/ └── PaperMod/ ├── ... (テーマのファイル) archetypes/default.md の設定 これを設定することで、マークダウンファイルのテンプレートを作成できる。\n--- date: '{{ .Date }}' draft: true title: '{{ replace .File.ContentBaseName \"-\" \" \" | title }}' type: '{{ .Section }}' tags: [] categories: [] --- hugo.toml の設定 Hugo サイト全体の設定を管理する中心的なファイル。\nこれによりサイトの見た目、機能、構造を決定する。\nbaseURL = 'https://riichisugai.github.io/' # サイトの公開URL languageCode = 'en-us' # サイトの主要言語 theme = \"PaperMod\" # 使用するテーマデザイン title = 'Riichi Sugai' # サイトのタイトル # デフォルト言語を明示 defaultContentLanguage = \"en\" defaultContentLanguageInSubdir = true # 多言語対応の設定 [languages] # 英語ページの設定 [languages.en] weight = 1 languageName = \"English\" contentDir = \"content/en\" # サイトのコンテンツが置かれているディレクトリを指定 mainSections = [\"blog\"] # 英語ページのヘッダーメニュー設定 [[languages.en.menu.main]] identifier = \"blog\" name = \"Blog\" # サイトに表示するヘッダー名 url = \"/blog/\" # サイトのディレクトリ weight = 1 # 表示順序の優先度 # 日本語ページの設定 [languages.ja] weight = 2 languageName = \"日本語\" contentDir = \"content/ja\" mainSections = [\"blog\"] # 日本語ページのヘッダーメニュー設定 [[languages.ja.menu.main]] identifier = \"blog\" name = \"Blog\" url = \"/blog/\" weight = 1 [params] # ページ内のコードブロックにコピーボタンを表示 ShowCodeCopyButtons = true author = \"Riichi Sugai\" トップページの作成 content/en/ または、 content/ja/ 以下にトップページを作成します。\nhugo new content/en/_index.md hugo new content/ja/_index.md _index.md はトップページとして機能するもので、各セクションに用意するものです。\n※ 注意\nマークダウン形式のファイルを作成する際には毎回 hugo new コマンドを使用すること。Web ページの表示にバグが出たりします。\nコンテンツの作成 作成するコンテンツの例として blog を作ります。\nトップページと同じ階層にディレクトリ blog を作成して、そのディレクトリに移動します。\n/content/ja/blog/ にトップページ _index.md を作成 hugo new /content/ja/blog/_index.md そして以下の内容のファイルを作成します。\n--- date: '2025-11-01T02:14:44+09:00' draft: true title: 'Blog' type: 'blog' tags: [] categories: [] --- ここで、draft: true はウェブに表示しない下書きの状態になっています。 draft: false で公開設定になります。\n/content/ja/blog/ にコンテンツ 01-first-post.md を作成 hugo new /content/ja/blog/01-first-post.md そしてファイルの冒頭には以下を記入します。\n--- date: '2025-11-01T02:14:44+09:00' draft: true title: 'Blog' type: 'blog' tags: [] categories: [] --- トップページと同様の冒頭にすることで、トップページ内に各コンテンツがカード形式で表示されるようになります。 コンテンツの中身はこれに続くように記入していきます。記入方法は通常の markdown の記法に倣います。\nサーバーの起動 Webページの確認のために以下のコマンドを実行します。\nhugo server -D オプション -D をつけることで draft: true のページも出力されます。\nGithub.io での公開 hugo を実行して web サイトをビルドする cd public git init git remote add origin https://github.com/riichisugai/riichisugai.github.io.git git add . git commit -m \"Initial Commit\" git push -u origin main github.io のページで [Settings]\u003e[Pages] の Branch を main に設定する これで公開可能。2回目以降は　1., 2., 5., 6., 7. を実行する。\nGithub Actions での自動作成 ここ更新中\n",
+  "wordCount" : "474",
+  "inLanguage": "ja",
+  "datePublished": "2025-11-01T02:17:13+09:00",
+  "dateModified": "2025-11-01T02:17:13+09:00",
+  "author":{
+    "@type": "Person",
+    "name": "Riichi Sugai"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://riichisugai.github.io/ja/blog/01-first-post/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Riichi Sugai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://riichisugai.github.io/favicon.ico"
+    }
+  }
+}
 </script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/ja/" accesskey="h" title="Riichi Sugai (Alt + H)">Riichi Sugai</a>
+            <a href="https://riichisugai.github.io/ja/" accesskey="h" title="Riichi Sugai (Alt + H)">Riichi Sugai</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -200,7 +364,7 @@ Web サイトのテーマを選定
                 </button>
                     <ul class="lang-switch"><li>|</li>
                         <li>
-                            <a href="http://localhost:1313/en/" title="English"
+                            <a href="https://riichisugai.github.io/en/" title="English"
                                 aria-label="English">En</a>
                         </li>
                     </ul>
@@ -208,22 +372,22 @@ Web サイトのテーマを選定
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/ja/news/" title="News">
+                <a href="https://riichisugai.github.io/ja/news/" title="News">
                     <span>News</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/ja/papers/" title="Papers">
+                <a href="https://riichisugai.github.io/ja/papers/" title="Papers">
                     <span>Papers</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/ja/blog/" title="Blog">
+                <a href="https://riichisugai.github.io/ja/blog/" title="Blog">
                     <span>Blog</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/ja/cv/" title="CV">
+                <a href="https://riichisugai.github.io/ja/cv/" title="CV">
                     <span>CV</span>
                 </a>
             </li>
@@ -237,17 +401,11 @@ Web サイトのテーマを選定
     
     <h1 class="post-title entry-hint-parent">
       01: HUGO によるWEBサイト作成
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
-      </span>
     </h1>
     <div class="post-meta"><span title='2025-11-01 02:17:13 +0900 JST'>2025年11月1日</span>&nbsp;·&nbsp;<span>Riichi Sugai</span>&nbsp;|&nbsp;<span>言語:</span>
 <ul class="i18n_list">
     <li>
-        <a href="http://localhost:1313/en/blog/01-first-post/">En</a>
+        <a href="https://riichisugai.github.io/en/blog/01-first-post/">En</a>
     </li>
 </ul>
 
@@ -508,7 +666,7 @@ Web サイトのテーマを選定
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/ja/">Riichi Sugai</a></span> · 
+        <span>&copy; 2025 <a href="https://riichisugai.github.io/ja/">Riichi Sugai</a></span> · 
 
     <span>
         Powered by

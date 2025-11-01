@@ -196,6 +196,24 @@ ORCID: <a href="https://orcid.org/0009-0003-0771-1155" target="_blank" rel="noop
 
     </footer>
 </article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">01: HUGO によるWEBサイト作成
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>はじめての WEB サイト作成を、 HUGO を利用して実施してみました。 以下では、その手順を備忘録として残しておきます。
+静的サイトジェネレーター 特徴 plain HTML Jekyll Hugo 言語基盤 HTML/CSS/JS Ruby Go セットアップ なし 中程度 やや難 GitHub Pages対応 ◎（直接OK） ◎（公式サポート） ○（ビルド後にpush） ビルド速度 – 遅め 超高速 多言語対応 手動 一部可能 ◎（標準機能） テンプレート/テーマ 手動 多い 非常に多い 向き 小規模・自由設計 中規模・ブログ型 中〜大規模・多言語型 今回は Hugo (ヒューゴ) を利用することにした。 選択のポイントは以下の通り。
+ブログや研究記録のようにページが増えるサイトの場合には、Jekyll、Hugo が向いている 日本語と英語の両方に対応させたい → Hugo が向いている 環境構築 Hugo のインストール macOS の場合
+brew install hugo hugo version でバージョンが確認できればOK。
+新規サイトの作成 作成したい場所で、以下のコマンドを入力（ my-website には任意の名前をいれる）
+hugo new site my-website cd my-website Web サイトのテーマを選定 テーマ名 特徴 hugo-coder シンプル＆軽量。プロフィールサイトに最適。 PaperMod 見やすい＆ブログ形式。学術用途にも人気。 Academic (Wowchemy) 研究者向け最強。論文リストやプロジェクト紹介に対応。やや重め。 ということで、 PaperMod を選択。 上で作成した web サイト用のディレクトリに移動したあと、以下のコマンドによりテーマをクローンした。
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-11-01 02:17:13 +0900 JST'>2025年11月1日</span>&nbsp;·&nbsp;<span>Riichi Sugai</span></footer>
+  <a class="entry-link" aria-label="post link to 01: HUGO によるWEBサイト作成" href="https://riichisugai.github.io/ja/blog/01-first-post/"></a>
+</article>
     </main>
     
 <footer class="footer">
